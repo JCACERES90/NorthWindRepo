@@ -40,12 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CabDocumentoBE.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
     <Compile Include="DocumentoBE.cs" />
     <Compile Include="GlobalTypes.cs" />
     <Compile Include="ItemBE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TbCategoriaBE.cs" />
     <Compile Include="TbClienteBE.cs" />
     <Compile Include="TbProductoBE.cs" />
   </ItemGroup>

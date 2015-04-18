@@ -51,7 +51,7 @@
             this.tabControl1.Location = new System.Drawing.Point(4, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(409, 298);
+            this.tabControl1.Size = new System.Drawing.Size(577, 298);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -60,7 +60,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(401, 272);
+            this.tabPage1.Size = new System.Drawing.Size(569, 272);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consulta";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             this.dataGridView1.DataSource = this.TbProductobindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(7, 17);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(388, 249);
+            this.dataGridView1.Size = new System.Drawing.Size(543, 249);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
@@ -114,7 +114,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(338, 321);
+            this.button1.Location = new System.Drawing.Point(502, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 356);
+            this.ClientSize = new System.Drawing.Size(593, 356);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmProducto";

@@ -77,7 +77,26 @@ namespace NorthWind.Win
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            //Guardar Documento en la Base de Datos
+            DocumentoBE oDocumento = new DocumentoBE();
+            //Guardar la cabecera
+            CabDocumentoBE oCabecera = new CabDocumentoBE();
+            oCabecera.Cliente = otmpCliente;
+            oCabecera.FechaHora = DateTime.Now;
+            oCabecera.IGV = oFacturaBL.IGV;
+            oCabecera.SubTotal = oFacturaBL.SubTotal;
+            oCabecera.Total = oFacturaBL.Total;
+            //Agregamos la cabera al documento
+            oDocumento.Cabecera = oCabecera;
+            //Agregarmos el detalle al documento
+            oDocumento.Detalle = oFacturaBL.GetDetalle();
+            //Guardar en la Base de Datos
+            TbDocumentoDAO documento = new TbDocumentoDAO();
+            if (documento.GuardarDocumento(oDocumento) == 
+                eEstadoProceso.Correcto)
+            {
+                MessageBox.Show("Documento Guardado");
+            }
             
         }
     }
